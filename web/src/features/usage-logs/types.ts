@@ -106,6 +106,7 @@ export const USAGE_BILLING_PATH = {
 export type UsageBillingPath =
   (typeof USAGE_BILLING_PATH)[keyof typeof USAGE_BILLING_PATH]
 
+<<<<<<< HEAD
 export interface SavingsEstimate {
   schema_version: number
   calculator: string
@@ -119,6 +120,12 @@ export interface SavingsEstimate {
   matched_model: string
   pricing_mode: string
   estimated: boolean
+=======
+export interface ToolSurchargeItem {
+  name: string
+  count: number
+  price: number
+>>>>>>> f3ab2cff36b3962815be9114e300d26927cc42b3
 }
 
 export interface LogOtherData {
@@ -212,11 +219,13 @@ export interface LogOtherData {
   file_search?: boolean
   file_search_call_count?: number
   file_search_price?: number
+  tool_surcharges?: ToolSurchargeItem[]
   audio_input_seperate_price?: boolean
   audio_input_token_count?: number
   audio_input_price?: number
   image_generation_call?: boolean
   image_generation_call_price?: number
+  image_generation_call_count?: number
   is_system_prompt_overwritten?: boolean
   po?: string[]
   billing_source?: string

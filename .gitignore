@@ -39,4 +39,9 @@ skills-lock.json
 .local-tests/
 service/relayconvert/chat_responses_live_local_test.go
 service/openaicompat/chat_responses_live_local_test.go
+<<<<<<< HEAD
 /tmp
+=======
+go.work
+go.work.sum
+>>>>>>> f3ab2cff36b3962815be9114e300d26927cc42b3
